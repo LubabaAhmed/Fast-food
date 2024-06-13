@@ -1,0 +1,150 @@
+/* main.css */
+
+:root {
+    --background-color: #ffcc00;
+    --font-primary-color: #333;
+    --font-secondary-color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: var(--font-primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-container {
+    background-color: var(--background-color);
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: var(--font-secondary-color);
+}
+
+.banner-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner-title h1 {
+    font-size: 3rem;
+    color: var(--font-primary-color);
+}
+
+.banner-desc p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: var(--font-primary-color);
+}
+
+.banner-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.section-title {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: var(--font-primary-color);
+    text-align: center;
+}
+
+.about-us-container, .menu-container, .special-offers-container, .contact-container {
+    padding: 40px 20px;
+    background-color: var(--font-secondary-color);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about-us p, .menu-item p, .offer p, .contact-info p {
+    font-size: 1.2rem;
+    color: var(--font-primary-color);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.special-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offer {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--font-secondary-color);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+.check-all-project {
+    display: flex;
+    justify-content: center;
+}
+
+.check-all-project button {
+    padding: 15px 50px;
+    background-color: var(--background-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    color: var(--font-secondary-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
